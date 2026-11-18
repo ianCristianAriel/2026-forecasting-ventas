@@ -1,6 +1,8 @@
-./src/*
-src/*
+./src/*.py
+src/*.py
+./src/__pycache__/*.pyc
+src/__pycache__/*.pyc
 notebooks/2_eda_preprossesing_and_fe.ipynb
 ./notebooks/2_eda_preprossesing_and_fe.ipynb
-./data*
-data/*
+./data*.csv
+data/*.csv
