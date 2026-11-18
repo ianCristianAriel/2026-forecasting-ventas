@@ -1,0 +1,6 @@
+./src/*
+src/*
+notebooks/2_eda_preprossesing_and_fe.ipynb
+./notebooks/2_eda_preprossesing_and_fe.ipynb
+./data*
+data/*
