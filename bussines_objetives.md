@@ -1,55 +1,37 @@
-# Comprensión del Negocio
+# Business Objective – Rossmann Sales
 
-## Análisis del Comportamiento de Compra de los Clientes
+## 1. Contexto del negocio
 
-### 1. Introducción
+Rossmann es una cadena de farmacias y tiendas minoristas que necesita tomar decisiones estratégicas sobre la inversión destinada a la renovación de sus establecimientos. Para ello, el director financiero (CFO) requiere estimaciones confiables de los ingresos futuros de cada tienda.
 
-El presente documento tiene como objetivo ofrecer una visión comprensiva del comportamiento de compra de los clientes, basado en los datos recopilados. El análisis está diseñado para identificar patrones clave, comprender las preferencias de los clientes, y proporcionar recomendaciones estratégicas para mejorar la toma de decisiones en áreas como marketing, ventas, y atención al cliente.
+## 2. Problema de negocio
 
-### 2. Análisis de Comportamiento de Compra
+La empresa necesita anticipar el comportamiento de sus ventas para planificar la asignación del presupuesto destinado a la renovación de sus establecimientos.
 
-#### 2.1. Demografía de los Clientes
+La falta de estimaciones precisas sobre las ventas futuras dificulta la evaluación del potencial de ingresos de cada tienda y limita la capacidad de la empresa para tomar decisiones de inversión fundamentadas en información cuantitativa.
 
-La distribución de la edad y género de los clientes permite identificar segmentos clave de la población que compran ciertos tipos de productos. Esto puede ser útil para segmentar campañas de marketing.
+## 3. Business Objective
 
-#### 2.2. Preferencias de Producto y Categorías
+Desarrollar un modelo de predicción de ventas diarias por tienda para las próximas seis semanas, con el fin de proporcionar al director financiero estimaciones confiables de los ingresos futuros que permitan mejorar la planificación financiera y optimizar la asignación del presupuesto destinado a la renovación de los establecimientos.
 
-El análisis de las categorías y productos más comprados ayuda a entender qué tipos de productos tienen mayor demanda. Esto puede guiar decisiones sobre inventario y desarrollo de productos.
+## 4. Objetivo de Data Science
 
-#### 2.3. Análisis de Montos de Compra
+Construir un modelo de regresión supervisada que, utilizando información histórica de ventas, características de las tiendas y variables temporales y promocionales, permita estimar las ventas futuras de cada establecimiento para un horizonte de seis semanas.
 
-Evaluar el monto promedio de las compras puede ofrecer insights sobre el valor de los clientes. Identificar a los clientes con un alto valor de compra puede ayudar a dirigir esfuerzos de retención y personalización.
+La variable objetivo será Sales, y las predicciones se realizarán para cada combinación de tienda (Store) y fecha (Date).
 
-#### 2.4. Efecto de Promociones y Descuentos
+El modelo deberá capturar los patrones temporales presentes en los datos históricos y utilizar las variables disponibles para generar estimaciones precisas de las ventas futuras.
 
-El impacto de los descuentos y códigos promocionales en las decisiones de compra puede ser analizado para optimizar estrategias de pricing y promociones futuras.
+## 5. Criterio de éxito del negocio
 
-#### 2.5. Métodos de Pago y Preferencias de Envío
+El proyecto será exitoso si las predicciones de ventas proporcionan información confiable y útil para la planificación financiera de Rossmann, contribuyendo a una asignación más eficiente del presupuesto de renovación de sus establecimientos.
 
-Comprender los métodos de pago preferidos y los tipos de envío seleccionados por los clientes permite mejorar la experiencia de compra, ofreciendo más opciones en las áreas más demandadas.
+Las estimaciones deberán permitir comparar el potencial de ingresos futuros de las distintas tiendas y servir como insumo para la toma de decisiones estratégicas de inversión.
 
-#### 2.6. Calificaciones y Satisfacción del Cliente
+## 6. Criterio de éxito analítico
 
-Las calificaciones de los productos ofrecen una perspectiva directa sobre la satisfacción del cliente y pueden revelar áreas de mejora en la calidad del producto o servicio.
+El modelo deberá generar predicciones de ventas con un nivel de error suficientemente bajo para que puedan utilizarse como insumo en la planificación financiera.
 
-### 3. Recomendaciones Estratégicas
+Se utilizará el MAPE (Error Porcentual Absoluto Medio) como métrica principal de evaluación, buscando minimizar la diferencia porcentual entre las ventas reales y las predichas.
 
-#### 3.1. Segmentación de Clientes
-
-Con base en la demografía y el comportamiento de compra, se pueden crear segmentos de clientes para personalizar las ofertas y mejorar la efectividad de las campañas de marketing.
-
-#### 3.2. Optimización de Inventarios
-
-Identificar los productos más demandados y ajustar el inventario según la temporada y las preferencias de los clientes puede reducir costos y aumentar la eficiencia.
-
-#### 3.3. Estrategias de Fidelización
-
-Para los clientes de alto valor, se recomienda implementar programas de fidelización que incluyan ofertas exclusivas y servicios personalizados para aumentar la retención.
-
-#### 3.4. Mejora de la Experiencia de Compra
-
-Adaptar las opciones de pago y envío según las preferencias de los clientes puede mejorar la satisfacción general y reducir el abandono de carritos.
-
-### 4. Conclusión
-
-El análisis detallado del comportamiento de compra permite a la empresa comprender mejor a sus clientes y tomar decisiones más informadas. Implementar las recomendaciones propuestas puede resultar en un aumento en la satisfacción del cliente, mayores ingresos y una optimización en las operaciones del negocio.
+El desempeño del modelo se evaluará sobre un conjunto de datos de prueba que represente un período posterior al utilizado para el entrenamiento, con el objetivo de medir su capacidad para predecir ventas futuras en condiciones similares a las de una implementación real.
