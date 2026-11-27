@@ -2,13 +2,27 @@
 Predicción de ventas diarias por establecimiento · Horizonte de seis semanas
 
 ## 1. Resumen ejecutivo
-- Cantidad de tiendas analizadas: 1115
-- Horizonte temporal de las predicciones: 64 días
-- Ventas totales proyectadas: 424.598.600
-- Promedio general de ventas diarias proyectadas: 6.950 euros
-- MAPE global del modelo sobre conjunto de test: 11.62%
 
-> El modelo ofrece proyecciones estables y confiables a nivel general —con un WAPE promedio del 11,62% y la mayoría de las tiendas concentradas cerca del 10%–13%—, conservando el ciclo semanal y suavizando picos extremos con variaciones acotadas en el promedio proyectado a 60 días frente al histórico (en relación con la desviación estándar de €3.095), lo que entrega una base cuantitativa sólida para priorizar el presupuesto de renovación en tiendas de alta facturación promedio proyectada (como 817, 262 y 1114, que superan los €20.000) y considerar sucursales con leve mejora en su nivel promedio esperado (como 586, 1018 y 595). Queda bajo criterio y análisis posterior del CFO auditar y decidir la asignación de capital en los casos atípicos: las 7 tiendas con WAPE superior al 30% (770, 839, 286, 909, 183, 815 y 192) y las sucursales con mayores contracciones en su promedio proyectado respecto a su histórico (como 453, 122 y 732), evaluando su impacto financiero, estacional y estratégico antes de comprometer inversión.
+### Indicadores generales del modelo
+
+- Cantidad de tiendas analizadas: **1115**
+- Horizonte temporal de las predicciones: **64 días**
+- Ventas totales proyectadas: **424.598.600 €**
+- Promedio general de ventas diarias proyectadas: **6.950 €**
+- MAPE global del modelo sobre el conjunto de test: **11,62 %**
+
+### Conclusiones y recomendaciones
+
+El modelo ofrece **proyecciones estables y confiables a nivel general**, con un **WAPE promedio del 11,62 %** y la mayoría de las tiendas concentradas cerca del **10 %–13 %**. Además, conserva el **ciclo semanal** y suaviza los picos extremos, presentando variaciones acotadas en el promedio proyectado a 60 días frente al histórico (en relación con la desviación estándar de **3.095 €**).
+
+Estos resultados proporcionan una **base cuantitativa sólida para priorizar el presupuesto de renovación**, especialmente en tiendas de alta facturación promedio proyectada, como **817, 262 y 1114**, que superan los **20.000 €**, así como para considerar sucursales con una **leve mejora en su nivel promedio esperado**, como **586, 1018 y 595**.
+
+Queda bajo el **criterio y análisis posterior del CFO** auditar y decidir la asignación de capital en los casos atípicos:
+
+- **7 tiendas con WAPE superior al 30 %:** 770, 839, 286, 909, 183, 815 y 192.
+- **Sucursales con mayores contracciones en su promedio proyectado respecto al histórico:** 453, 122 y 732.
+
+En estos casos, se recomienda **evaluar el impacto financiero, estacional y estratégico** antes de comprometer inversión.
 
 ## 2. Proyecciones y análisis de tiendas
 
